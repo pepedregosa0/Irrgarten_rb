@@ -4,7 +4,7 @@
 require_relative 'dice'
 module Irrgarten
   class Weapon
-    def initialize(power, uses)
+    def initialize(power = 0, uses = 0)
       @power = power
       @uses = uses
     end
@@ -24,6 +24,11 @@ module Irrgarten
 
     def discard
       Dice.discard_element(@uses)
+    end
+
+    # PRACTICA1 SESION 1 PREGUNTA A3
+    def copia
+      Weapon.new(@power, @uses)
     end
 
   end
