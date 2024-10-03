@@ -22,9 +22,27 @@ module Irrgarten
       puts "Puntero a Arma: #{weapon1.to_s}"
       puts "Arma copiada: #{weapon2.to_s}"
 
+      weapon3 = Weapon.crea_random_weapon
+
+      puts "Arma random: #{weapon3}"
 
     end
   end
 end
 
 Irrgarten::Practica1A3.new.main
+
+# SESION1
+# funcion añadida a la clase weapon
+#def copia
+#  Weapon.new(@power, @uses)
+#end
+
+# SESION2
+# funcion añadida a la clase weapon
+# def self.crea_random_weapon
+#   Weapon.new(Dice.random_strength, Dice.uses_left)
+# end
+
+# SESION2
+#

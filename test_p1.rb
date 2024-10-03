@@ -15,7 +15,8 @@ module Irrgarten
       weapon1 = Weapon.new(2.5, 5)
       puts "Weapon1: " + weapon1.to_s
 
-      3.times do
+      #otra forma de loop for
+      for i in 1..3
         puts "Weapon1 attack: #{weapon1.attack}"
         puts "Weapon1: " + weapon1.to_s
       end
