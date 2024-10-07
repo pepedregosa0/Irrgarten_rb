@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 # encoding: utf-8
 
-require_relative 'weapon'
+require_relative '../weapon'
 
 
 module Irrgarten

@@ -25,15 +25,5 @@ module Irrgarten
     def discard
       Dice.discard_element(@uses)
     end
-
-    # SESION1
-    def copia
-      Weapon.new(@power, @uses)
-    end
-
-    # SESION2
-    def self.crea_random_weapon
-      Weapon.new(Dice.random_strength, Dice.uses_left)
-    end
   end
 end
