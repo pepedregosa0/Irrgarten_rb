@@ -3,9 +3,9 @@
 
 module Irrgarten
   class LabyrinthSquare
-    def initialize(row, col)
-      @row = row
-      @col = col
+    def initialize(content)
+      @row = nil
+      @col = nil
       @content = content
     end
   end

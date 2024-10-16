@@ -5,9 +5,9 @@ require_relative 'player'
 
 module Irrgarten
   class PlayerSquare
-    def initialize(row, col, player)
-      @row = row
-      @col = col
+    def initialize(player)
+      @row = nil
+      @col = nil
       @player = player
     end
   end

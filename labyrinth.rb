@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 # encoding: utf-8
 
-require_relative 'monster_square'
-require_relative 'labyrinth_square'
-require_relative 'player_square'
+#TERMINAR P2
+
+#require_relative 'monster_square'
+#require_relative 'labyrinth_square'
+#require_relative 'player_square'
 require_relative 'directions'
 require_relative 'dice'
 require_relative 'orientation'
@@ -22,6 +24,9 @@ module Irrgarten
       @n_cols = n_cols
       @exit_row = exit_row
       @exit_col = exit_col
+      @monsters = Array.new(n_rows) { Array.new(n_cols) }
+      @players = Array.new(n_rows) { Array.new(n_cols) }
+      @labyrinth = Array.new(n_rows) { Array.new(n_cols) }
     end
 
     def spread_players(players)

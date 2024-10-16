@@ -5,9 +5,9 @@ require_relative 'monster'
 
 module Irrgarten
   class MonsterSquare
-    def initialize(row, col, monster)
-      @row = row
-      @col = col
+    def initialize(monster)
+      @row = nil
+      @col = nil
       @monster = monster
     end
   end

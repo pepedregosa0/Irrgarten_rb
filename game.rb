@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 # encoding: utf-8
 
+#TERMINAR P2
+
 require_relative 'dice'
 require_relative 'player'
 require_relative 'directions'
@@ -17,9 +19,9 @@ module Irrgarten
       @current_player_index = nil
       @log = nil
       @current_player = nil
-      @players = nil
+      @players = []
       @labyrinth = nil
-      @monsters = nil
+      @monsters = []
     end
 
     def finished
