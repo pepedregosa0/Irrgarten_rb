@@ -3,10 +3,12 @@
 
 require_relative 'monster'
 
-class MonsterSquare
-  def initialize(row, col, monster)
-    @row = row
-    @col = col
-    @monster = monster
+module Irrgarten
+  class MonsterSquare
+    def initialize(row, col, monster)
+      @row = row
+      @col = col
+      @monster = monster
+    end
   end
 end
