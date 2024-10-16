@@ -3,20 +3,17 @@
 
 require_relative 'weapon'
 require_relative 'shield'
+require_relative 'directions'
+require_relative 'dice'
 
 module Irrgarten
   class Player
-    attr_reader :row, :col
+    attr_reader :row, :col, :number
 
     @@MAX_WEAPONS = 2
     @@MAX_SHIELDS = 3
     @@INITIAL_HEALTH = 10
     @@HITS_TO_LOSE = 3
-    @name
-    @row
-    @col
-    @weapons
-    @shields
 
     def initialize(number, intelligence, strength)
       @number = number
@@ -24,6 +21,11 @@ module Irrgarten
       @strength = strength
       @health = @@INITIAL_HEALTH
       @consecutive_hits = 0
+      @name = nil
+      @row = nil
+      @col = nil
+      @weapons = []
+      @shields = []
     end
 
     def resurrect

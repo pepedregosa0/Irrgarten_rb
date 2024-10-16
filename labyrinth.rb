@@ -1,4 +1,12 @@
 # frozen_string_literal: true
+# encoding: utf-8
+
+require_relative 'monster_square'
+require_relative 'labyrinth_square'
+require_relative 'player_square'
+require_relative 'directions'
+require_relative 'dice'
+require_relative 'orientation'
 
 module Irrgarten
   class Labyrinth

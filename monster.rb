@@ -1,21 +1,20 @@
 # frozen_string_literal: true
 # encoding: utf-8
 
-require_relative 'labyrinth'
+require_relative 'dice'
 
 module Irrgarten
   class Monster
     @@INITIAL_HEALTH = 5
-    @row
-    @col
 
     def initialize(name, intelligence, strength)
       @name = name
       @intelligence = intelligence
       @strength = strength
       @health = @@INITIAL_HEALTH
+      @row = nil
+      @col = nil
     end
-
 
     def dead
 
@@ -30,7 +29,8 @@ module Irrgarten
     end
 
     def set_pos(row, col)
-
+      @row = row
+      @col = col
     end
 
     def to_s
