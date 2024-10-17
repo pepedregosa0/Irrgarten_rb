@@ -44,5 +44,14 @@ Irrgarten::Practica1A3.new.main
 #   Weapon.new(Dice.random_strength, Dice.uses_left)
 # end
 
-# SESION2
+#P1 SESION 3 atributo de instacia de clase de la clase weapon
+#@COLOR = "verde"
 #
+#def self.Color
+#  @COLOR
+#end
+#def initialize(power = 0, uses = 0)
+#  @power = power
+#  @uses = uses
+#  @color = Weapon.Color
+#end
