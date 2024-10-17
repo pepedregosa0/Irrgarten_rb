@@ -1,20 +1,27 @@
 # frozen_string_literal: true
 # encoding: utf-8
 
-require_relative ''
+#TERMINAR P2
+
+require_relative 'dice'
+require_relative 'player'
+require_relative 'directions'
+require_relative 'game_character'
+require_relative 'game_state'
+require_relative 'labyrinth'
+require_relative 'monster'
 
 module Irrgarten
   class Game
     @@MAX_ROUNDS = 10
-    @current_player_index
-    @log
-    @labyrinth
-    @players
-    @monsters
-    @current_player = 1
 
     def initialize(nplayers)
-
+      @current_player_index = nil
+      @log = nil
+      @current_player = nil
+      @players = []
+      @labyrinth = nil
+      @monsters = []
     end
 
     def finished
